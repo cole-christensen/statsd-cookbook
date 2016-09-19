@@ -5,6 +5,7 @@ gem 'chef'
 gem 'chefspec'
 gem 'test-kitchen'
 gem 'kitchen-vagrant'
+gem 'kitchen-docker'
 gem 'rake'
 
 group :docker do
