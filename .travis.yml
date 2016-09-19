@@ -16,8 +16,8 @@ env:
 # before_script:
 #  - source <(curl -sL https://raw.githubusercontent.com/zuazo/kitchen-in-travis/0.5.0/scripts/start_docker.sh)
 
-before_install: curl -L https://www.getchef.com/chef/install.sh | sudo bash -s -- -P chefdk -v 0.17
+before_install: curl -L https://www.getchef.com/chef/install.sh | bash -s -- -P chefdk -v 0.17.17
 install: chef exec bundle install
 
 script:
-  - travis_retry bundle exec rake integration:docker[$KITCHEN_REGEXP]
+  - KITCHEN_LOCAL_YAML=.kitchen.docker.yml chef exec bundle exec kitchen verify ${KITCHEN_REGEXP}
