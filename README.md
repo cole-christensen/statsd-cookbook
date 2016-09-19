@@ -4,6 +4,8 @@ Chef cookbook to install [Etsy's
 StatsD](https://github.com/etsy/statsd) daemon. Supports the new
 pluggable backend modules.
 
+[![Build Status](https://travis-ci.org/cole-christensen/statsd-cookbook.svg?branch=master)](https://travis-ci.org/cole-christensen/statsd-cookbook)
+
 # REQUIREMENTS
 
 Depends on the cookbooks:
