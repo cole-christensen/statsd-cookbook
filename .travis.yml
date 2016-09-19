@@ -2,7 +2,8 @@ rvm:
   - 2.2
   - 2.3
 
-sudo: true
+sudo: required
+services: docker
 
 env:
   matrix:
